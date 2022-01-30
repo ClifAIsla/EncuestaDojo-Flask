@@ -1,0 +1,23 @@
+.container{
+    width: 280px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container>div{
+    margin-bottom: 20px;
+}
+
+.filas{
+    display: flex;
+    justify-content: space-between;
+}
+.boton{
+    display: flex;
+    margin: 20px 0px 0px 0px;
+    justify-content: flex-end;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey Index</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div>
+        <form class="container" action="/registrarUsuario" method="POST">
+            <div class="filas">
+                <label for="name">Your name:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="filas">
+            <label for="ubication">Dojo location:</label>
+                <select name="ubication">
+                    <option value="U.S.A." selected>U.S.A.</option>
+                    <option value="Mexico" >Mexico</option>
+                    <option value="Ecuador" >Ecuador</option>
+                    <option value="Chile" >Chile</option>
+                    <option value="Perú" >Perú</option>
+                </select>                
+            </div>
+            <div class="filas">
+                <label for="language">Favorite languaje:</label>
+                <select name="language">
+                    <option value="Python" selected>Python</option>
+                    <option value="C++" >C++</option>
+                    <option value="Java" >Java</option>
+                    <option value="Javascript" >Javascript</option>
+                    <option value="CSS" >CSS</option>
+                </select>                
+            </div>
+            <div>
+                <label for="coment">Coment(optional):</label>
+            </div>
+            <textarea name="coment" cols="40" rows="4"></textarea>
+            <div class="boton">
+                <input type="submit">
+            </div>
+        </form>
+        <form class="container" action="/ingresar" method="POST">
+            <h2>Para ver su información ingrese su nombre:</h2>
+            <label for="usuario">Nombre:</label>
+            <input type="text" name="usuario">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+</html>
